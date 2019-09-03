@@ -5,13 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docsify start . -c config.js",
-    "deploy": "now -p"
+    "start": "docsify start .",
+    "deploy": "now -p",
+    "build": "npm install"
+  },
+  "dependencies": {
+    "docsify-cli": "^4.1.7"
+  },
+  "devDependencies": {
+    "now": "^6.2.0"
+  },
+  "now": {
+    "env": {
+      "NODE_ENV": "production"
+    }
   },
   "docsify": {
     "template": "./ssr.html",
     "config": {
-      "basePath": "https://docsify.js.org/",
+      "basePath": "https://lyingdragon.github.io/docsify-ssr-test/",
       "loadSidebar": true,
       "loadNavbar": true
     }
