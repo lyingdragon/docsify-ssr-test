@@ -1,0 +1,22 @@
+{
+  "name": "my-ssr-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docsify start . -c config.js",
+    "deploy": "now -p"
+  },
+  "docsify": {
+    "template": "./ssr.html",
+    "config": {
+      "basePath": "https://docsify.js.org/",
+      "loadSidebar": true,
+      "loadNavbar": true
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
