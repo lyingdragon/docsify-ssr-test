@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docsify start .",
+    "start": "docsify start . -p $PORT",
     "deploy": "now -p",
     "build": "npm install"
   },
